@@ -1,0 +1,367 @@
+h1{
+    background-color: rgb(255, 255, 255);
+}
+nav a{
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: coral;
+}
+
+ul li {
+    float: left;
+}
+ul li a{
+	text-decoration: none;
+	display: inline-block;
+    color: white;
+    padding: .5cm;
+    background-color: coral;
+}
+
+ul li a:hover:not(.active) {
+    background-color: blue;
+    cursor: pointer;
+}
+ul li a.active{
+    background-color: grey
+}
+
+body{
+    padding:20px;
+    font-family: 'Roboto Condensed', sans-serif;
+    background-image: url("./../images/chicagoskyline.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+}
+i{
+    color: blue;
+    font-size: 100px;
+}
+.container{
+    display:grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    grid-gap:20px;
+    padding:10px;
+    background-color: rgba(255, 255, 255, 0.445);
+    text-align: left;
+}
+.container img{
+    width: 100%;
+    height:auto;
+}
+@media screen and (min-width:800px){
+    .container{
+        display:grid;
+        grid-template-columns: 200px auto;
+        grid-template-rows: auto auto auto;
+        grid-gap:20px;
+        padding:10px;
+        background-color: rgba(255, 255, 255, 0.445);
+        text-align: left;
+    }
+    .container img{
+        width: 100%;
+        height:auto;
+    }
+}
+.containeri{
+    display:grid;
+    grid-column-start: span 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-template-rows: 25px auto auto;
+    grid-template-columns: auto;
+    grid-gap:20px;
+    padding:10px;
+    background-color: rgba(255, 255, 255, 0.445);
+    text-align: left;
+    align-items:center;
+}
+.containeri h2{
+    grid-column-start: span 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    text-align: center;
+}
+.containerii{
+    display:block;
+    grid-column-start: 1;
+    grid-row-start: 2;
+    align-items: start;
+    background-color: rgba(255, 255, 255, 0.445);
+}
+.containerii h3{
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    margin:10px;
+}
+
+@media screen and (min-width: 800px){
+    .containeri{
+        display:grid;
+        grid-column-start: span 2;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        grid-template-rows: 25px auto;
+        grid-template-columns: auto auto;
+        grid-gap:20px;
+        padding:10px;
+        background-color: rgba(255, 255, 255, 0.445);
+        text-align: left;
+        align-items:center;
+    }   
+    .containeri h2{
+        grid-column-start: span 2;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        text-align: center;
+    }
+    .containerii{
+        display:block;
+        grid-column-start: 1;
+        grid-row-start: 2;
+        align-items: start;
+        background-color: rgba(255, 255, 255, 0.445);
+    }
+    .containerii h3{
+        text-align: center;
+        background-color: rgb(255, 255, 255);
+        margin:10px;
+    }
+    
+}
+
+
+.container1 {
+    display: grid;
+    grid-column-start: 1;
+    grid-row-start: 3;
+    background-color: rgba(255, 255, 255, 0.445);
+    text-align: center;
+    align-items: baseline;
+}
+.container1 h2{
+    grid-column-start: span 1;
+    grid-row-start: 1;
+    text-align: center;
+}
+.container1 img{
+    width:50%;
+    height:auto;
+} 
+.container1 p{
+    background-color: rgb(255, 255, 255);
+}
+.item {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 100px auto auto auto auto auto;
+    background-color: rgba(255, 255, 255, 0.445);
+    text-align: center;
+    padding:0;
+}
+.container2{
+    display:grid;
+    grid-column-start: 1;
+    grid-row-start: 4;
+    text-align:center;
+    background-color: rgba(255, 255, 255, 0.445);
+    text-decoration: none;
+}
+.item2 {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+}
+@media screen and (min-width:800px){
+    .container1 {
+        display: grid;
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 2;
+        background-color: rgba(255, 255, 255, 0.445);
+        text-align: center;
+        align-items: baseline;
+    }
+    .items{
+        grid-area: header;
+    }
+    .itema {
+        grid-area: main1;
+    }
+    .itemb {
+        grid-area: main2;
+    }
+    .itemc {
+        grid-area: main3;
+    }
+    .itemd{
+        grid-area: main4;
+    }
+    .iteme{
+        grid-area: main5;
+    }
+    .itemf{
+        grid-area: main6;
+    }
+    .item {
+        grid-template-columns: auto auto auto;
+        grid-template-rows: 100px auto auto;
+        grid-template-areas: 
+        "header header header"
+        "main1 main2 main3"
+        "main4 main5 main6";
+        align-items: baseline;
+        padding: 10px;
+        text-align: center;
+    }
+    .container1 img{
+        width:50%;
+        height:auto;
+    } 
+    .container1 p{
+        background-color: rgb(255, 255, 255);
+    }
+    .container2{
+        display:grid;
+        grid-column-start: span 2;
+        grid-row-start: 3;
+        grid-row-end: 3;
+        text-align:center;
+        background-color: rgba(255, 255, 255, 0.445);
+        text-decoration: none;
+    }
+    .item2 {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+    }
+}
+
+
+.container3{
+    display: grid;
+    background-color: rgba(255, 255, 255, 0.445);
+    align-items:baseline;
+}
+.container h2{
+    grid-column-start: span 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    text-align: center
+}
+.item3 {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto;
+    align-items: center;
+}
+.item3 img{
+    width: 50%;
+    height: auto;
+}
+
+@media screen and (min-width:800px){
+    .container3{
+        display: grid;
+        background-color: rgba(255, 255, 255, 0.445);
+        align-items:baseline;
+    }
+    .container h2{
+        grid-column-start: span 2;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        text-align: center
+    }
+    .item3 {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        align-items: baseline;
+    }
+    .item3 img{
+        width: 50%;
+        height: auto;
+    }
+}
+
+.container4 {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.445);
+    align-items: center;
+}   
+@media screen and (min-width:1250px){
+    .container4 {
+        display: grid;
+        grid-template-columns: auto auto;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.445);
+        align-items:center;
+    }   
+    .twitter-tweet{
+        width: 50%;
+        height: auto;
+    }
+}
+
+.docs{
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    background-color: rgba(255, 255, 255, 0.445);
+    text-align: center;
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+.contact{
+    display:grid;
+    grid-column-start: 1;
+    grid-row-start: 2;
+    grid-gap: 20px;
+    background-color:white;
+    padding:20px;
+}
+.pdf{
+    display:grid;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    width:100%;
+    height:1100px;
+}
+
+@media screen and (min-width:800px){
+    .docs{
+        margin:20px;
+        grid-template-columns: 200px auto 200px;
+        grid-template-rows: auto auto;
+        grid-gap: 20px;
+        background-color: rgba(255, 255, 255, 0.445);
+        text-align: center;
+        display: block;
+        overflow: hidden;
+    }
+    .contact{
+        display:grid;
+        grid-column-start: 2;
+        background-color:white;
+        padding:20px;
+    }
+    .pdf{
+        display:grid;
+        grid-column-start: 2;
+        grid-row-start: 1;
+        width:100%;
+        height:1100px;
+    }
+}
