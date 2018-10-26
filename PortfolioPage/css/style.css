@@ -1,6 +1,9 @@
 h1{
     background-color: rgb(255, 255, 255);
 }
+h4{
+    background-color: white;
+}
 nav a{
     text-decoration: none;
 }
