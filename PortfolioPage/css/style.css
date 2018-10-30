@@ -47,6 +47,9 @@ i{
     color: blue;
     font-size: 100px;
 }
+form{
+    background-color: white;
+}
 .container{
     display:grid;
     grid-template-columns: auto;
@@ -357,6 +360,7 @@ i{
     grid-template-columns: auto;
     grid-template-rows: auto auto;
     grid-column-start: 2;
+    grid-gap: 20px;
     background-color:white;
     padding:20px;
 }
