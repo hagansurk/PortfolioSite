@@ -1,0 +1,645 @@
+h1{
+    background-color: rgb(255, 255, 255);
+}
+h4{
+    background-color: white;
+}
+nav a{
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: coral;
+}
+
+ul li {
+    float: left;
+}
+ul li a{
+	text-decoration: none;
+	display: inline-block;
+    color: white;
+    padding: .5cm;
+    background-color: coral;
+}
+
+ul li a:hover:not(.active) {
+    background-color: blue;
+    cursor: pointer;
+}
+ul li a.active{
+    background-color: grey
+}
+
+body{
+    padding:20px;
+    font-family: 'Roboto Condensed', sans-serif;
+    background-image: url("./../images/chicagoskyline.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+}
+i{
+    color: blue;
+    font-size: 100px;
+}
+
+.myButton {
+	background-color:#f0c911;
+	-moz-border-radius:9px;
+	-webkit-border-radius:9px;
+	border-radius:9px;
+	border:1px solid #e65f44;
+	display:inline-block;
+	cursor:pointer;
+	color:#c92200;
+	font-family:Arial;
+	font-size:10px;
+	font-weight:bold;
+	padding:6px 12px;
+	text-decoration:none;
+	text-shadow:0px 0px 0px #ded17c;
+}
+.myButton:hover {
+	background-color:#ff7700;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+.container{
+    display:grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    grid-gap:20px;
+    padding:10px;
+    background-color: rgba(255, 255, 255, 0.445);
+    text-align: left;
+}
+.container img{
+    width: 100%;
+    height:auto;
+}
+@media screen and (min-width:800px){
+    .container{
+        display:grid;
+        grid-template-columns: 200px auto;
+        grid-template-rows: auto auto auto;
+        grid-gap:20px;
+        padding:10px;
+        background-color: rgba(255, 255, 255, 0.445);
+        text-align: left;
+    }
+    .container img{
+        width: 100%;
+        height:auto;
+    }
+}
+.containeri{
+    display:grid;
+    grid-column-start: span 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-template-rows: 25px auto auto;
+    grid-template-columns: auto;
+    grid-gap:20px;
+    padding:10px;
+    background-color: rgba(255, 255, 255, 0.445);
+    text-align: left;
+    align-items:center;
+}
+.containeri h2{
+    grid-column-start: span 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    text-align: center;
+}
+.containerii{
+    display:block;
+    grid-column-start: 1;
+    grid-row-start: 2;
+    align-items: start;
+    background-color: rgba(255, 255, 255, 0.445);
+}
+.containerii h3{
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    margin:10px;
+}
+
+@media screen and (min-width: 800px){
+    .containeri{
+        display:grid;
+        grid-column-start: span 2;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        grid-template-rows: 25px auto;
+        grid-template-columns: auto auto;
+        grid-gap:20px;
+        padding:10px;
+        background-color: rgba(255, 255, 255, 0.445);
+        text-align: left;
+        align-items:center;
+    }   
+    .containeri h2{
+        grid-column-start: span 2;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        text-align: center;
+    }
+    .containerii{
+        display:block;
+        grid-column-start: 1;
+        grid-row-start: 2;
+        align-items: start;
+        background-color: rgba(255, 255, 255, 0.445);
+    }
+    .containerii h3{
+        text-align: center;
+        background-color: rgb(255, 255, 255);
+        margin:10px;
+    }
+    
+}
+
+
+.container1 {
+    display: grid;
+    grid-column-start: 1;
+    grid-row-start: 3;
+    background-color: rgba(255, 255, 255, 0.445);
+    text-align: center;
+    align-items: baseline;
+}
+.container1 h2{
+    grid-column-start: span 1;
+    grid-row-start: 1;
+    text-align: center;
+}
+.container1 img{
+    width:50%;
+    height:auto;
+} 
+.container1 p{
+    background-color: rgb(255, 255, 255);
+}
+.item {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 100px auto auto auto auto auto;
+    background-color: rgba(255, 255, 255, 0.445);
+    text-align: center;
+    padding:0;
+}
+.container2{
+    display:grid;
+    grid-column-start: 1;
+    grid-row-start: 4;
+    text-align:center;
+    background-color: rgba(255, 255, 255, 0.445);
+    text-decoration: none;
+}
+.item2 {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+}
+@media screen and (min-width:800px){
+    .container1 {
+        display: grid;
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 2;
+        background-color: rgba(255, 255, 255, 0.445);
+        text-align: center;
+        align-items: baseline;
+    }
+    .items{
+        grid-area: header;
+    }
+    .itema {
+        grid-area: main1;
+    }
+    .itemb {
+        grid-area: main2;
+    }
+    .itemc {
+        grid-area: main3;
+    }
+    .itemd{
+        grid-area: main4;
+    }
+    .iteme{
+        grid-area: main5;
+    }
+    .itemf{
+        grid-area: main6;
+    }
+    .item {
+        grid-template-columns: auto auto auto;
+        grid-template-rows: 100px auto auto;
+        grid-template-areas: 
+        "header header header"
+        "main1 main2 main3"
+        "main4 main5 main6";
+        align-items: baseline;
+        padding: 10px;
+        text-align: center;
+    }
+    .container1 img{
+        width:50%;
+        height:auto;
+    } 
+    .container1 p{
+        background-color: rgb(255, 255, 255);
+    }
+    .container2{
+        display:grid;
+        grid-column-start: span 2;
+        grid-row-start: 3;
+        grid-row-end: 3;
+        text-align:center;
+        background-color: rgba(255, 255, 255, 0.445);
+        text-decoration: none;
+    }
+    .item2 {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+    }
+}
+
+
+.container3{
+    display: grid;
+    background-color: rgba(255, 255, 255, 0.445);
+    align-items: baseline;
+}
+.container3 p{
+    background-color: rgb(255, 255, 255, 0.8);
+    margin: 10px;
+    width: auto;
+}
+.container h2{
+    grid-column-start: span 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    text-align: center
+}
+.item3 {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto;
+    align-items: center;
+}
+.item3 img{
+    width: 50%;
+    height: auto;
+}
+
+@media screen and (min-width:800px){
+    .container3{
+        display: grid;
+        background-color: rgba(255, 255, 255, 0.445);
+        align-items:baseline;
+    }
+    .container3 p{
+        background-color: rgb(255, 255, 255, 0.8);
+        margin: 10px;
+        width: auto;
+        align-items: center;
+    }
+    .container h2{
+        grid-column-start: span 2;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        text-align: center
+    }
+    .item3 {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        align-items: baseline;
+    }
+    .item3 img{
+        width: 50%;
+        height: auto;
+    }
+}
+
+.container4 {
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    background-color: rgba(255, 255, 255, 0.445);
+    text-align: center;
+    align-items: baseline;
+}
+
+.highlights {
+    grid-area: header;
+    background-color:  rgba(255, 255, 255, 0.7);
+}
+.item2 {
+    grid-template-columns: auto ;
+    grid-template-rows: 200px auto auto;
+    grid-template-areas: 
+    "header"
+    "main1"
+    "main2";
+    align-items: baseline;
+    padding: 10px;
+    text-align: center;
+}
+blockquote.twitter-tweet {
+    display: inline-block;
+    font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 16px;
+    border-color: #eee #ddd #bbb;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+    margin: 10px 5px;
+    padding: 0 16px 16px 16px;
+    max-width: 468px;
+}
+blockquote.twitter-tweet p {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 20px;
+}
+  
+blockquote.twitter-tweet a {
+    color: inherit;
+    font-weight: normal;
+    text-decoration: none;
+    outline: 0 none;
+}
+  
+blockquote.twitter-tweet a:hover,
+blockquote.twitter-tweet a:focus {
+        text-decoration: underline;
+}
+.twitter-tweet {
+    width: 100% !important;
+    height: 100% !important;
+}
+@media screen and (max-width:400px){
+    .container4 {
+        display: grid;
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 2;
+        background-color: rgba(255, 255, 255, 0.445);
+        text-align: center;
+        align-items: baseline;
+    }
+    .highlights {
+        grid-area: header;
+        background-color:  rgba(255, 255, 255, 0.7);
+    }
+    .item2 {
+        grid-template-columns: auto ;
+        grid-template-rows: 300px auto auto;
+        grid-template-areas: 
+        "header"
+        "main1"
+        "main2";
+        align-items: baseline;
+        padding: 10px;
+        text-align: center;
+    }
+    blockquote.twitter-tweet {
+        display: inline-block;
+        font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
+        font-size: 12px;
+        font-weight: bold;
+        line-height: 16px;
+        border-color: #eee #ddd #bbb;
+        border-radius: 5px;
+        border-style: solid;
+        border-width: 1px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+        margin: 10px 5px;
+        padding: 0 16px 16px 16px;
+        max-width: 468px;
+    }
+  
+    blockquote.twitter-tweet p {
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 20px;
+    }
+  
+    blockquote.twitter-tweet a {
+        color: inherit;
+        font-weight: normal;
+        text-decoration: none;
+        outline: 0 none;
+    }
+  
+    blockquote.twitter-tweet a:hover,
+    blockquote.twitter-tweet a:focus {
+    text-decoration: underline;
+    }
+    .twitter-tweet {
+        width: 100% !important;
+        height: 100% !important;
+    }
+}
+@media screen and (min-width:1150px){
+    .container4 {
+        display: grid;
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 2;
+        background-color: rgba(255, 255, 255, 0.445);
+        text-align: center;
+        align-items: baseline;
+    }
+    .twitter-tweet{
+        width: 50%;
+        height: auto;
+    }
+    .highlights {
+        grid-area: header;
+        background-color:  rgba(255, 255, 255, 0.7);
+    }
+    .item2 {
+        grid-template-columns: auto auto ;
+        grid-template-rows: 100px auto auto;
+        grid-template-areas: 
+        "header header"
+        "main1 main2"
+        "main3 main4";
+        align-items: baseline;
+        padding: 10px;
+        text-align: center;
+    }
+    blockquote.twitter-tweet {
+        display: inline-block;
+        font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
+        font-size: 12px;
+        font-weight: bold;
+        line-height: 16px;
+        border-color: #eee #ddd #bbb;
+        border-radius: 5px;
+        border-style: solid;
+        border-width: 1px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+        margin: 10px 5px;
+        padding: 0 16px 16px 16px;
+        max-width: 468px;
+    }
+    blockquote.twitter-tweet p {
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 20px;
+    }
+      
+    blockquote.twitter-tweet a {
+        color: inherit;
+        font-weight: normal;
+        text-decoration: none;
+        outline: 0 none;
+    }
+      
+    blockquote.twitter-tweet a:hover,
+    blockquote.twitter-tweet a:focus {
+            text-decoration: underline;
+    }
+    .twitter-tweet {
+        width: 100% !important;
+        height: 100% !important;
+    }
+}
+.docs{
+    background-color: rgba(255, 255, 255, 0.445);
+    text-align: center;
+    overflow: hidden;
+}
+.resume{
+    display:grid;
+    grid-template-rows:auto;
+    align-content: center;
+}
+.docs a{
+    background-color: white;
+    margin: .5cm;
+    height: auto;
+}
+.resume img{
+    width:50%;
+    height:auto;
+    align-items: center;
+}
+.contact1{
+    display:grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    grid-column-start: 2;
+    grid-gap: 20px;
+    padding:20px;
+    align-content: center;
+}
+.contact1 form{
+    width:50%;
+    height:auto;
+    margin: 0 auto;
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+    background-color: white;
+} 
+.contact1 label {
+    display: inline-block;
+    width: 90px;
+    text-align: center;
+}
+.contact1 input {
+    padding: 5px;
+    width: 50%;
+    margin: 4px 4px 4px 4px;
+}
+.contact1 textarea {
+    resize: both;
+    width: 100%;
+    height: 100px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+}   
+
+@media screen and (min-width:800px){
+    .docs{
+        background-color: rgba(255, 255, 255, 0.445);
+        text-align: center;
+        overflow: hidden;
+    }
+    .resume{
+        display:grid;
+        grid-template-rows: auto auto;
+    }
+    .docs a{
+        background-color: white;
+        margin: .5cm;
+    }
+    .resume img{
+        width:50%;
+        height:auto;
+        align-items: center;
+    }
+    .contact1{
+        display:grid;
+        grid-auto-columns: auto;
+        grid-template-rows: auto 10px auto;
+        grid-column-start: 2;
+        padding:20px;
+        align-content: center;
+    }
+    .contact1 form{
+        width:50%;
+        height:auto;
+        align-items: center;
+        margin: 0 auto;
+        padding: 1em;
+        border: 1px solid #CCC;
+        border-radius: 1em;
+        background-color: white;
+    } 
+    .contact1 label {
+        display: inline-block;
+        width: 90px;
+        text-align: center;
+    }
+    .contact1 input {
+        padding: 5px;
+        margin: 4px 4px 4px 4px;
+    }
+    .contact1 textarea {
+        resize: both;
+        overflow: visible;
+        width: 200%;
+        height: 100px;
+        padding: 12px 20px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        background-color: #f8f8f8;
+    }   
+   
+}

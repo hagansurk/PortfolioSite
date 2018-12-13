@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="html5reset-1.6.1.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+	<script src="scripts/main.js"></script>
+	<link rel="stylesheet" type="text/css" href="lightbox2-master/dist/css/lightbox.css" >
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<title>Hagan Surkamer's Portfolio</title>
+</head>
+<body>
+<header>
+	<h1>Hagan Surkamer</h1>
+	<nav>
+		<ul>
+			<li><a href="index.html">Home Page</a></li>
+			<li><a href="projects.html">Python and Data Projects</a></li>
+			<li><a class = "active" href="art.html">Old Artwork</a></li>
+			<li><a href="highlight.html">Play-by-play and Color Highlights</a></li>
+			<li><a href="documents.html">Resume and Contact</a></li>
+		</ul>
+	</nav>
+</header>
+
+	<div class="container3">
+		<h2>My Art</h2>
+		<div class="item3">
+			<div class="itemi">
+				<a href="images/HallPic.png" data-lightbox="image" data-title = "Hallway" class="mix art"><img src = "images/HallPic.png" alt = "The hallway of my old school"/></a>
+				<h3>The Hallway</h3>
+				<p>I was very interested in architecture at the time I made this.  This is a hallway in my highschool and I made it using shaprie.  Using different desgins, such as dots and lines, I was able to add texture and depth to create a sense of what features the hallway had.</p>
+			</div>
+			<div class="itemi">
+				<a href ="images/HockeyPic.png" data-lightbox="image" data-title="An portrait I did with pointalism" class="mix-art"><img src = "images/HockeyPic.png" alt = "A pointalism piece of me from hockey"/></a>
+				<h3>Hockey Drawing</h3>
+				<p>A huge part of my life was given to hockey.  From moving away from home at an early age, to the early mornings to train.  Using pointalism, I wanted to capture a portrait of myself in my comfort zone, in my uniform.</p>
+			</div>
+			<div class="itemi">
+				<a href ="images/hat.png" data-lightbox="image" data-title="One of my first sketches, a hat in any empty room." class="mix-art"><img src = "images/hat.png" alt = "My Hat on a box in a room"/></a>
+				<h3>My Hat</h3>
+				<p>This was one of the first pieces I had ever done.  For a simple class project, we had to sketch an item and the area surrounding it using techniques we learned in class.</p>
+			</div>
+			<div class="itemi">
+				<a href ="images/DoorwayPic.png" data-lightbox="image" data-title="An abstract piece of a door in confusing landscape." class="mix-art"><img src = "images/DoorwayPic.png" alt = "A doorway drawn abstractly with sharpie"/></a>
+				<h3>The Hidden Doorway</h3>
+				<p>This is one of my favorite pieces because I made it with no goal in mind.  I was simply bored one day and began drawing lines using a ruler.  Eventually, I saw door take shape and began to shade in between some of the lines I drew.</p>
+			</div>
+		</div>
+	</div>
+	<script src="lightbox2-master/dist/js/lightbox.js"></script>
+	<script src="script/mixitup.min.js"></script>
+        <script>
+            var containerEl = document.querySelector('.container');
+
+            var mixer = mixitup(containerEl);
+        </script>
+</body>
+</html>
